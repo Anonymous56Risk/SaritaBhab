@@ -14,7 +14,7 @@ class Config:
         self.SESSION: str = os.environ.get("SESSION", "AQC6fEM8nPEA1GKmo_NnbxqwIA032g3W9uJGuS8zI9IqZCNLfzrx9XDPwDqbGsnlnNsOLIiiYMXZ3b2E8MQNIstN2puexNm8LeQSP64sf-w9vgZfQsia--2qv4iK9HsD9GX7mMe3T5y4BmNr3gST9gaa0j08P0pw8iANerlfLBOhzEyuCfIBk9Nw0OFc2OWjZ_I9u5JjLB-B3GxSS1QYqe2huZIAVXOnnJtZ8Ta7dmS8TUzIWlyQM-7LUH1VjVRigcAO5hU_Cj-XNRgvziRZDJwyfyyjErDyWe24BiqPkrw7TgIIe9GZLPht5C7yGAP4xiCUHRfaqk1SmqWcJFeHGs0YAAAAAVXgRhQA")
         self.BOT_TOKEN: str = os.environ.get("BOT_TOKEN", None)
         self.SUDOERS: list = [
-            int(id) for id in os.environ.get("SUDOERS", " ").split() if id.isnumeric()
+            int(id) for id in os.environ.get("SUDOERS", "5404761904").split() if id.isnumeric()
         ]
         if not self.SESSION or not self.API_ID or not self.API_HASH:
             print("ERROR: SESSION, API_ID and API_HASH is required!")
