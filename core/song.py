@@ -28,7 +28,7 @@ class Song:
             self._retries: int = 0
             self.duration: str = "N/A"
             self.headers: dict = None
-            self.thumb: str = "https://telegra.ph/file/820cac7cb7b1a025542e2.jpg"
+            self.thumb: str = "https://te.legra.ph/file/4647bf74dadeb8ba49c80.jpg"
             for key, value in link.items():
                 setattr(self, key, value)
             self.request_msg: Message = request_msg
